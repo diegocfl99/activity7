@@ -1,36 +1,45 @@
+ Activity 7 – Robotics School Database
 
-Activity 7 – Robotics School Database
+ Project name
+Robotics School – Activity 7
 
-Descripción
-Este proyecto consiste en el diseño y desarrollo de una base de datos para una pequeña escuela de robótica, utilizando Laravel. El sistema permite organizar usuarios, grupos de estudiantes, cursos, kits de robótica y materiales didácticos.
+ Project description
+This project consists of designing and developing a database for a small robotics school using Laravel 12.71.0, PHP 8.2 and MySQL.
 
-Tecnologías utilizadas
+The database manages users with different roles (Administrative, Teacher and Student), student groups, courses, robotics kits and didactic materials.
+
+ ER Diagram
+
+The following diagram shows the entities and relationships of the database.
+
+[ER Diagram](diagrama_er.png)
+
+ Database information
+
+The project includes the following entities:
+
+- Users: stores users and their roles.
+- Groups: manages student groups.
+- Courses: stores course information.
+- Kits: stores robotics kits.
+- Didactic Materials: stores course learning materials.
+- Course Group: connects groups with their assigned courses.
+
+Test data
+
+The database includes:
+- 3 users: Administrative, Teacher and Student.
+- 3 robotics kits: StarterKit, Educational Robotics Kit and Kit5.
+- 3 initial groups: beginner, intermediate and advanced.
+- 4 original courses provided by the client.
+- 100 additional courses generated using Laravel Factory and FakerPHP.
+
+ Technologies used
 - Laravel 12.71.0
 - PHP 8.2
 - MySQL
-- Git y GitHub
+- Git and GitHub
 
-Estructura de la base de datos
-Se crearon las siguientes entidades:
 
-- Users: almacena los usuarios y sus roles (estudiante, maestro y administrador).
-- Groups: contiene los grupos de estudiantes.
-- Courses: almacena la información de los cursos.
-- Kits: registra los kits de robótica.
-- Didactic Materials: almacena los materiales de cada curso.
-- Course Group: relaciona los grupos con los cursos asignados.
-
-Se configuraron las relaciones entre las entidades mediante claves primarias y foráneas.
-
- Datos iniciales
-Se agregaron los tres grupos iniciales (beginner, intermediate y advanced), los tres kits de robótica y los cuatro cursos proporcionados en el caso.
-
- Archivos incluidos
-- `diagrama_er.png`: diagrama entidad-relación.
-- `activity7.sql`: exportación de la base de datos.
-
- Repositorio
-[Agregar aquí la URL de GitHub]
-
- Nota
-Se utilizó Laravel 12.71.0 debido a la compatibilidad con la versión de PHP instalada en el entorno de desarrollo.
+Database export
+The SQL database export is included in the project as `activity7.sql`.
